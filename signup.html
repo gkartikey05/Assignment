@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUP Page</title>
+  <style>
+    body{
+      background-color: #000;
+      font-family: Arial, sans-serif;
+    }
+    .container{
+      width: 400px;
+      background-color: #fff;
+      border-radius: 5px;
+      margin: 0 auto;
+      padding: 20px;
+      margin-top: 100px;
+    }
+    h1{
+      text-align: center;
+      color: #000;
+    }
+    input,label{
+      color: #000;
+    }
+    .form-group{
+      margin-bottom: 20px;
+    }
+    .form-group > label{
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group > input{
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #000;
+      border-radius: 3px;
+    }
+    .form-group > select{
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #000;
+      border-radius: 3px;
+    }
+    .form-group > input[type="submit"]{
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+    }
+    .form-group > input[type="submit"]:hover{
+      background-color: #1e87f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Signup</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="batch">Batch:</label>
+        <select name="batch" id="batch" required>
+          <option value="sigma1">Sigma 1.0</option>
+          <option value="sigma2">Sigma 2.0</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Signup">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
