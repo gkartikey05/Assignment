@@ -1,3 +1,1 @@
-# a file on Git and GitHub assignment
-
-GitHub Assignment
+# a file on git assignment
